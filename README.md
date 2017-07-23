@@ -1,4 +1,4 @@
-# planttreasure应用
+# planttreasure(植物宝项目应用)
 
 ## 启动
 
