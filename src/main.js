@@ -1,10 +1,10 @@
 import Vue from 'vue'
-import App from './App'
-import Index from './Index'
+// import App from './App'
+// import Index from './Index'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import vegetablesclass from './components/vegetablesclass'
-import plantingbox from './components/plantingbox'
+// import vegetablesclass from './components/vegetablesclass'
+// import plantingbox from './components/plantingbox'
 
 import Weixin from './Weixin'
 import XSDK from './xLinkSDK'
@@ -28,12 +28,12 @@ let router = new VueRouter({
   //mode: 'history',
   routes: [
     {path: '/', redirect: '/index'},
-    {path: '/index', component: Index},
+    {path: '/index', component: resolve => require(['./Index'], resolve)},
     {
-      path: '/control/', component: App,
+      path: '/control/', component: resolve => require(['./App'], resolve),
       children: [
-        {path: 'vegetablesclass/:deviceId', component: vegetablesclass},
-        {path: 'plantingbox/:deviceId', component: plantingbox}
+        {path: 'vegetablesclass/:deviceId', component: resolve => require(['./components/vegetablesclass'], resolve)},
+        {path: 'plantingbox/:deviceId', component: resolve => require(['./components/plantingbox'], resolve)}
       ]
     }
   ]
