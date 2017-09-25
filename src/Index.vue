@@ -9,7 +9,7 @@
       <a class="weui-cell weui-cell_access" v-for="device in deviceList" @click="deviceDetail(device)">
         <div class="weui-cell__hd"><img src="./assets/device-logo.png" style="width:50px;height:50px;"></div>
 
-        <div class="weui-cell__bd"><p>植物宝</p></div>
+        <div class="weui-cell__bd"><p>植物宝test</p></div>
         <div class="weui-cell__ft">{{device.online ? '在线' : '离线'}}</div>
       </a>
     </div>
