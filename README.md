@@ -1,4 +1,4 @@
-# planttreasure(植物宝项目应用)
+# planttreasure应用
 
 ## 启动
 
@@ -15,7 +15,7 @@ npm run dev
 
 - [vue文档(基础知识)](https://cn.vuejs.org/v2/guide/index.html)
 - [vue-router文档(路由库)](https://router.vuejs.org/zh-cn/)
-- [mint-ui文档](http://mint-ui.github.io/#!/zh-cn)
+- [mint-ui](http://mint-ui.github.io/#!/zh-cn)
 - [vue-loader文档(.vue模板)](https://lvyongbo.gitbooks.io/vue-loader/content/)
 - [vue-cli中文翻译文档(脚手架)](https://loulanyijian.github.io/vue-cli-doc-Chinese/)
 
