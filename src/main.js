@@ -8,6 +8,7 @@ import VueResource from 'vue-resource'
 
 import Weixin from './Weixin'
 import XSDK from './xLinkSDK'
+///
 
 import 'mint-ui/lib/style.css'
 import MintUI from 'mint-ui'
